@@ -1,4 +1,4 @@
-# MTA Realtime API JSON Proxy
+# MTA Realtime API JSON Proxy for OpenShift
 
 MtaSanitizer is a small HTTP server that converts the [MTA's realtime subway feed](http://datamine.mta.info/feed-documentation) from [Protocol Buffers/GTFS](https://developers.google.com/transit/gtfs/) to JSON. The app also adds caching and makes it possible to retreive information by location and train line. 
 
