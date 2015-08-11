@@ -15,6 +15,7 @@ from flask.json import JSONEncoder
 from datetime import datetime
 from functools import wraps
 import logging
+import os
 
 app = Flask(__name__)
 app.config.update(
@@ -125,4 +126,4 @@ def routes():
         })
 
 if __name__ == '__main__':
-    app.run(use_reloader=False)
+    app.run(host=os.environ['OPENSHIFT_PYTHON_IP'],port=8080,use_reloader=False)
